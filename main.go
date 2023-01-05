@@ -94,7 +94,7 @@ func parseDomainConf(baseConfig string) map[string][]string {
 
 func main() {
 	flag.Usage = func() {
-		fmt.Fprintf(flag.CommandLine.Output(), "Usage of %s:\n", os.Args[0])
+		fmt.Fprintf(flag.CommandLine.Output(), "Usage for %s:\n", os.Args[0])
 		flag.PrintDefaults()
 		fmt.Fprintln(flag.CommandLine.Output(), "  [zone:domain]")
 		fmt.Fprintln(flag.CommandLine.Output(), "\tThe domains to update are provided as a comma separated list of zone:domian pairs")
